@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microcontroller Pinouts & Reference</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            margin: 20px; 
+            padding: 20px; 
+            background-color: #ffccff; 
+            text-align: center; 
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        h1 { 
+            color: #660066;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #ff99ff;
+        }
+        
+        .container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px;
+        }
+        
+        .card { 
+            border: 2px solid #990099; 
+            padding: 20px; 
+            margin: 10px; 
+            width: 300px; 
+            text-align: center; 
+            background-color: #ffffff; 
+            border-radius: 15px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 5px 20px rgba(153, 0, 153, 0.3);
+        }
+        
+        .card img { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 10px;
+        }
+        
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            color: #ffffff;
+            font-weight: bold;
+            background-color: #990099;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .card a:hover {
+            background-color: #cc00cc;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Microcontroller Pinouts & Reference Sheets</h1>
+    <div class="container">
+        <div class="card">
+            <h3>ARDUINO</h3>
+            <img src="Images/ADUIONOPINOUT.png" alt="PINOUT">
+            <p>Used in Arduino Uno. 8-bit AVR microcontroller.</p>
+        </div>
+        <div class="card">
+            <h3>FPGA</h3>
+            <img src="Images/MAX10FPGAPINOUT.png" alt="PINOUT">
+            <p>Popular PIC microcontroller for embedded projects.</p>
+        </div>
+        <div class="card">
+            <h3>PI PICO</h3>
+            <img src="Images/RASPBERRYPIPICOPINOUT.jpg" alt="PINOUT">
+            <p>WiFi & Bluetooth-enabled microcontroller.</p>
+        </div>
+        <div class="card">
+            <h3>PIC18F57Q43</h3>
+            <img src="Images/PIC18F57Q43pinout.jpg" alt="PINOUT">
+            <p>Popular PIC microcontroller for embedded projects.</p>
+            <a href="PIC18F57Q43.HTML">View Details</a>
+        </div>
+    </div>
+</body>
+</html>
